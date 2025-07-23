@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /* Responsividade levando em consideração o tamanho de celulares mais antigos */
+            max-width: 800px; /* Responsividade */
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis aut necessitatibus, optio nam, dignissimos eius harum veniam mollitia autem ullam, aperiam deleniti voluptatum voluptates placeat illo labore omnis quasi hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatem accusamus, ullam quas facilis earum dignissimos quod sed nihil velit temporibus laudantium iusto quibusdam voluptas corporis recusandae impedit quam doloribus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quae, non pariatur ullam nulla harum fugiat molestias? Aut nulla debitis expedita? Obcaecati alias officia at iste amet exercitationem optio. Doloremque?
+        </p>
+        <picture>
+            <source media="(max-width:800px)" srcset="imagens/flor-amarela.jpg"> <!--Versão da imagem pequena para dispositivos menores-->
+            <img src="imagens/flor-amarela02.jpg" alt="Flores amarelas">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nostrum, similique, iusto quisquam rem amet corrupti molestias quo odit placeat ratione recusandae consequuntur id non. Deleniti temporibus voluptatum totam magni?
+        </p>
+    </main>
+</body>
+</html>
