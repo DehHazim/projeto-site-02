@@ -28,21 +28,53 @@ body {
 
 
 }
+
 header {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque03);
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.268);
+    margin-bottom: 20px /* para dar um espaço após o h1 */
+    
 }
 
 header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
     color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.268);
 }
 
 nav {
     background-color: var(--cor6);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.168);
+}
+
+nav > a {
+    color: white;
+    padding: 15px;
+    border-radius: 5px; /* para arredondar os itens do menu */
+    text-decoration: none; /* para perder o sublinhado do link */
+    font-weight: bold; /* para o texto ter aspecto de negrito */
+    /* transition-duration: .5s;  para haver um delay do mouse no menu */
+}
+
+nav > a:hover { /* para mudar de cor ao passar o mouse pelo menu */
+    background-color: var(--cor3);
+    color: var(--cor5)
+
 }
 
 main {
@@ -65,8 +97,38 @@ main h1 {
 }
 
 main h2 {
-    font-family: var(--fonte-destaque02)
+    font-family: var(--fonte-destaque02);
+    color: var(--cor5);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
 
+main p {
+    margin: 15px 0px; /* cima, direita, baixo, esquerda */
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor5);
+    font-weight: bold;
+    
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor6);
+    background-color: var(--cor2);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor5)
 }
 
 main img {
@@ -74,8 +136,46 @@ main img {
 
 }
 
+aside {
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px black;
+}
+
+aside > h3 {
+    background-color: var(--cor6);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-type: '\1F338\00A0\00A0';
+    list-style-position: inside; /* bolinhas dos tópicos em lista ficam para dentro da margem*/
+    /* colums: 2; Para dividir em duas colunas*/
+
+}
 footer {
     background-color: var(--cor6);
-    font-family: var(--fonte-destaque03);
     color: white;
+    text-align: center;
+    font-family: var(--fonte-destaque03);
+    font-size: 0.5em;
+    padding: 5px;
+
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+
 }
