@@ -140,7 +140,7 @@ aside {
     background-color: var(--cor3);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 8px black;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.286);
 }
 
 aside > h3 {
@@ -152,7 +152,7 @@ aside > h3 {
 }
 
 aside ul {
-    list-style-type: '\1F338\00A0\00A0';
+    list-style-type: '\1F338\00A0\00A0'; /* trocar o ícone de flor */
     list-style-position: inside; /* bolinhas dos tópicos em lista ficam para dentro da margem*/
     /* colums: 2; Para dividir em duas colunas*/
 
